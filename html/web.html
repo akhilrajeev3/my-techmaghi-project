@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Div</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+        }
+
+        .top-div, .bottom-div {
+            width: 500px;
+            height: 300px;
+            text-align: center;
+    
+            background-color: #f1f1f1;
+            position: relative;
+            z-index: 1; /* Place them above the centered div */
+        }
+
+        .centered-div {
+            position: absolute;
+            top: 200px;
+            left: 18
+            0px;
+            width: 50%;
+            text-align: center;
+            border-radius: 50px;
+            
+            z-index: 2; /* Place it above the top and bottom divs */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-div"><img style="height: 100%; width: 100%;" src="img.jpeg" alt=""></div>
+        <div class="centered-div"><img style="height: 100%; width: 100%; border-radius: 50%" src="img.jpeg" alt=""></div>
+        <div class="bottom-div"><img style="height: 100%; width: 100%;" src="img.jpeg" alt=""></div>
+    </div>
+</body>
+</html>

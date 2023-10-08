@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div{
+        box-shadow:  7px 7px 7px rgba(99, 64, 64, 0.3);
+        height: 420px;
+        width: 350px;
+        position:absolute;
+        top: 90px;
+        left: 170px;
+        background-color: rgb(222, 223, 227);
+        border-radius: 15px;
+        padding: 20px;
+        
+    }
+
+        .button-link{
+            color: beige;
+            background-color: rgb(57, 75, 238);
+            width: 345px;
+            height: 8%; 
+            border-radius: 6px;
+        }
+        
+        .button-link:hover {
+         background-color:rgb(170, 171, 186);
+         transition: .2s ease-in;
+         cursor: wait; 
+         border: none;
+}
+
+@media screen and (max-width: 768px) {
+            .div {
+                width: 90%;
+                left: 5%;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+            }
+        }
+    </style>
+        
+
+</style>
+<body>
+    <div class="div">
+        <img style="width: 35%; " src="https://freelogopng.com/images/all_img/1656958733linkedin-logo-png.png" alt="no image">
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Sign in</h2>
+        <p>Stay updated on the professional world</p>
+        <label for="email">Enter your Email</label><br>
+        <input style="border-radius: 5px; width: 340px; height: 30px; margin-bottom: 10px;" type="text">
+        <br>
+        <label for="email">Password</label><br>
+        <input style="border-radius: 5px; width: 340px; height: 30px; margin-bottom: 20px;" type="password"><br>
+        <button class="button-link">Sign in</button>
+        <p style="color: blue;"><b> Forgot password ?</b></p>
+        <p style="color: blue;"><b>Create a new account</b></p>
+    </div>

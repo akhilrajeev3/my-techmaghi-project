@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="ps.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <img src="Playstation_Img/img/logo.png" class="logo" alt="">
+        <nav>
+            <ul id="menuList"> 
+                <li><a href="">Game</a></li>
+                <li><a href="">VR</a></li>
+                <li><a href="">Media remotes</a></li>
+                <li><a href="">Game</a></li>
+            </ul>
+        </nav>
+        <img onclick="toggleMenu()" src="Playstation_Img/img/menu.png" class="menu-icon" alt="">
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <h2>PS4 V2 <br>DualShock</h2>
+            <h3>Wireless controller for Playstation</h3>
+            <p>(Compatible/Generic)</p>
+            <h4>$50</h4>
+            <button type="button">Buy Now <img src="Playstation_Img/img/arrow.png" alt=""></button>
+        </div>
+        <div class="col-2">
+            <img class="controller" src="Playstation_Img/img/controller.png" alt="">
+            <div class="color-box"></div>
+            <div class="add-button">
+                <img src="Playstation_Img/img/add.png" alt="">
+                <p><small>Add to cart</small></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="social">
+        
+        <a href="https://www.facebook.com/SonyPlaystationIndia/">
+    <img src="Playstation_Img/img/fb.png" alt="">
+        </a>
+
+    <img src="Playstation_Img/img/ig.png" alt="">
+
+        <a href="https://twitter.com/PlayStationIN">  
+    <img src="Playstation_Img/img/tw.png" alt="">
+        </a>
+    </div>
+    </div>
+    
+    <script>
+        var menuList = document.getElementById('menuList');
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu()
+        
+        {
+            if( menuList.style.maxHeight === "0px")
+            {
+                menuList.style.maxHeight = "128px";
+               
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";  
+            }
+        }
+
+    </script>
+</body>
+</html>

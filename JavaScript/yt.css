@@ -1,0 +1,13 @@
+
+.ytlogo{
+    width: 100px;
+    height: 40px;
+}
+.search-bar{
+    height: 40px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: rgb(119, 119, 119);
+    padding: 10px;
+    display: inline-block;
+}
