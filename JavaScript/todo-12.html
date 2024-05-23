@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+</head>
+<style>
+    .js-todo-list, .div1{
+        display: grid;
+        grid-template-columns: 200px 150px 100px;
+        column-gap: 15px;
+        row-gap: 20px;
+        font-size: 17px;
+
+    
+    }
+    .div1{
+        margin-bottom: 20px;
+        
+    }
+
+    .js-name-input, .js-due-date-inpu{
+        padding: 10px;
+       
+    }
+
+    .addButton{
+        background-color: green;
+        color: white;
+        font-size: 15px;
+        border: none;
+        
+    }
+    .delete-todo-button{
+        background-color: red;
+        color: white;
+        border: none;
+        height: 35px;
+    }
+    
+    
+</style>
+<body>
+    <p>To-do list</p>
+    <div class="div1">
+        
+        <input  placeholder="Task name" class="js-name-input">
+        <input class="js-due-date-input" type="date" >
+
+        <button class="addButton" onclick="addTodo()">Add</button>
+    </div>
+    
+    <div class="js-todo-list"></div>
+    
+</body>
+
+
+
+
+<script src="scripts/todo12.js"></script>
+</html>

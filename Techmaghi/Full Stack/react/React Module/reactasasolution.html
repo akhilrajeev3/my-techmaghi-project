@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divhtml" style="padding: 5px;"></div>
+    
+</body>
+<script>
+    const divHtml = document.getElementById('divhtml')
+    const render = () =>
+    {
+        divHtml.innerHTML =`
+        <h3>HTML sample </h3>
+        <input>
+        <div> ${new Date()}</div>`
+    }
+
+    setInterval(render,1000)
+</script>
+</html>

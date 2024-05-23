@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // function findLargest(array1)
+    // {
+    //     if (array1.length === 0)
+    //     return null
+
+    //     let largest = array1[0]
+
+    //     for( let i = 0; i<array1.length; i++)
+    //     {
+    //         if( array1[i]>largest)
+    //         largest = array1[i]
+    //     }
+
+
+    //     return largest
+    // }
+
+
+
+    // const array1 = [23,45,65,34,88,91,23]
+    // console.log(findLargest(array1) + ' is the largest element')
+
+    function findSmallest(array1)
+    {
+        if (array1.length === 0)
+        return null
+
+        let smallest = array1[0]
+
+        for( let i = 0; i<array1.length; i++)
+        {
+            if( array1[i]<smallest)
+            smallest = array1[i]
+        }
+
+
+        return smallest
+    }
+
+
+
+    const array1 = [23,45,65,34,88,91,23]
+    console.log(findSmallest(array1) + ' is the smallest element')
+</script>

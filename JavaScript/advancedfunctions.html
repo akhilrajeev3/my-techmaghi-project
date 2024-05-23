@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+  <button class="js-button" onclick="">Click</button>
+    <script>
+    const buttonElement = document.querySelector('.js-button')
+
+    const eventListener =() =>{console.log('click')}
+    
+    buttonElement.addEventListener('click', () =>eventListener )
+
+    buttonElement.removeEventListener('click', eventListener)
+
+    buttonElement.addEventListener('click', () =>{
+      console.log('click2')
+    })
+       /* x
+       // greeting()
+
+        const num=2;
+        
+      //  console.log(typeof value)
+      //  value()
+
+       const value = function greeting()
+        {
+            console.log('hello2');
+        }
+
+
+        // anonymous function
+        greeting()
+
+         function greeting()
+        {
+            console.log('hello2');
+        }
+       
+
+       // greeting()
+      //  const greeting= function()
+        {
+            console.log('hello akhil');
+        };
+
+
+     
+
+      const object1 = {
+        num:2,
+        fun:function()
+        {
+            console.log('hello 3')
+        }
+      }
+
+      // this is called a method
+      
+      object1.fun()
+
+      function display(param)
+      {
+        console.log(param);
+      }
+      display(2);
+      //passing a value into a function
+
+
+      function run(param){
+        param()
+      }
+      run(function()
+      {
+        console.log('hello 4')
+      })
+
+      
+
+       
+       setTimeout(function()
+       {
+        console.log('timeout')
+       }, 2000)
+
+       console.log('next line')
+       
+     
+    
+     setInterval(function ()
+     {
+        console.log('interval')
+     }, 1000);
+
+     console.log('next line')
+     
+
+    [
+      'make dinner',
+      'wash didhes',
+      'watch tv' 
+    ].forEach(function(value, index)
+    {
+
+      if(value=== 'watch tv')
+      {
+        return
+      }
+      console.log(value)
+      console.log(index)
+    });
+    
+
+    const regularFunction = function()
+    {
+      console.log("helllo")
+    }
+   
+    const arrowFunction = (length, breadth) => {
+      
+      length*breadth
+      console.log(area)
+    }
+    
+
+  
+    
+   
+    const arrowFunction2 = (p) => 4+5;
+    console.log(arrowFunction2())
+    
+
+    const object2={
+      method: () => {
+         
+      }
+    }
+    */
+
+
+
+    </script>
+</body>
+</html>

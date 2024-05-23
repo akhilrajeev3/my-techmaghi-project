@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    /* array destructuring
+    const object2 = [2,4,6,8]
+    const [a,b, ...rest]=object2
+    console.log(b)
+    console.log(rest)
+
+    //object destructuring
+    const person ={
+        name: 'Akhil',
+        age: 35
+    }
+    const {name, age} = person
+    //console.log(name) 
+  
+    // function destructuring
+    const printInfo =({Name,Age,City})=>
+    {
+        console.log(`Name: ${Name}`);
+        console.log(`Age: ${Age}`);
+        console.log(`City: ${City}`);
+    }
+    const person2 ={
+        Name: "Alice",
+        Age: 30,
+        City: "New York"
+    }
+*/
+    //printInfo(person2)
+    const array1 = [2,5,7,3]
+
+    function calculator(a,b)
+    {
+        const c= a*b
+        console.log(c)
+        return c
+
+       
+    }
+
+    calculator(array1[2], array1[3])
+
+</script>
+</html>

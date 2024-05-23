@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const donations= [
+        {name:'xavier', city:'la', amount: 100},
+        {name:'david', city:'georgia', amount: 50},
+        {name:'amanda', city:'Washington dc', amount: 30},
+        {name:'amy', city:'chicago', amount: 120},
+        {name:'jessica', city:'la', amount: 20},
+        {name:'alex', city:'la', amount: 80}
+    ]
+
+    const donateFilter = donations.filter(donate=>
+    {
+       return donate.city ==='la'
+         
+    }).map(donate =>
+    {
+        return donate.name
+    })
+
+    // filter and map functions
+
+    const donateSum = donations.reduce((total, donate) =>
+    {
+        return total + donate.amount
+    }, 0)
+
+    console.log(donateSum)
+</script>
+</html>

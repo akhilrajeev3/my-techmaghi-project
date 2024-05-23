@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map filter reduce</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const people=[
+        {
+            name:'dom',
+            age: 35,
+            occupation:'Web developer'
+        },
+        {
+            name:'amy',
+            age:26,
+            occupation:'Nurse'
+        },
+        {
+            name:'bruce',
+            age:55,
+            occupation:'Electrician'
+        }
+    ]
+    const names=people.map(person =>{
+        return person.name
+    })
+
+    const ages = people.map(ages =>{
+        return ages.age
+    })
+
+    const occupation=people.map(job =>
+    {
+        return job.occupation
+    })
+
+    // Filter
+
+    const overThirties = people.filter(person =>
+    {
+        return person.age>=30
+    }).map(person =>
+    {// this represents chaining map with filter
+        return person.name
+    })
+
+    const totalAge = people.reduce((total, person )=>{
+    return total + person.age
+    }, 0)
+
+    console.log(totalAge)
+</script>
+</html>
